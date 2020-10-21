@@ -1,8 +1,21 @@
 <template>
-  <div class="button">ボタン</div>
+   <div
+  class="button"
+  @click="$emit('onClick', $event)"
+  >
+    {{ title }}
+  </div>
 </template>
 
 <script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default: 'ボタン'
+    }
+  }
+}
 </script>
 
 <style scoped>

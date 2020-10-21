@@ -1,19 +1,19 @@
 <template>
   <div id="app">
-    <h1>Hello</h1>
-    <Button></Button>
-    <Button></Button>
-    <Button></Button>
+    <h1>Form</h1>
+    <CheckBox />
   </div>
 </template>
 
 <script>
-  import Button from './components/button';
+  import CheckBox from './components/CheckBox';
 
   export default {
+    name: 'App',
     components: {
-      Button
-    }
+      CheckBox
+    },
+
   }
 </script>
 
